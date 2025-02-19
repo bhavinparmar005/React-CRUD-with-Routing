@@ -10,7 +10,7 @@ import ApiPage from "./pages/ApiPage";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element ={<Login/>}/>
          <Route path="/Home" element ={<Home/>} />
@@ -18,7 +18,7 @@ function App() {
          <Route path="/EditPost" element ={<EditPost/>} />
          <Route path="/api" element={<ApiPage/>}/>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
