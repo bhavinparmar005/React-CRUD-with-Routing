@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import { useNavigate } from 'react-router-dom'
+import './Home.css'
 
 function Home() {
 
@@ -28,8 +29,8 @@ setPrintPost(del)
       <Navbar />
 
       <h1 align="center" className='fw-bold mt-4'> All Post</h1>
-      <div className="container">
-        <table className="table table-dark table-striped mt-3">
+      <div className="container" id='table'>
+        <table className="table table-dark table-striped mt-3" >
           <thead>
             <tr>
               <th scope="col">Id</th>
